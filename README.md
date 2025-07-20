@@ -1,4 +1,4 @@
-# zstd_native
+# zstd-native
 A native Node.js addon for high-performance compression and decompression using [zstd](https://facebook.github.io/zstd/) via [N-API](https://nodejs.org/api/n-api.html)
 
 ## Features

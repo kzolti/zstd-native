@@ -1,10 +1,11 @@
 {
   "name": "zstd-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "gypfile": true,
   "scripts": {
-    "install": "node-gyp rebuild",
+    "preinstall": "npm install node-addon-api",
+    "install": "npx node-gyp rebuild",
     "test": "node test.js"
   },
   "repository": {
@@ -19,6 +20,11 @@
     "addon",
     "nodejs"
   ],
+  "devDependencies": {
+    "node-gyp": "^9.0.0",
+    "node-addon-api": "^7.1.1"
+  },
+  "description": "A native Node.js addon for Zstandard compression and decompression",
   "author": "Zoltan Istvan KADA",
   "license": "MIT",
   "dependencies": {
