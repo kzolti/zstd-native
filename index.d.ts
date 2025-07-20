@@ -16,7 +16,7 @@
  * @throws {Error} If input size exceeds maximum allowed size
  * @throws {Error} If output would exceed maximum allowed size
  */
-export function compress(buffer: Buffer, level?: number): Promise<Buffer>;
+export function zstdCompress(buffer: Buffer, level?: number): Promise<Buffer>;
 
 /**
  * Decompress zstd compressed data
@@ -27,7 +27,7 @@ export function compress(buffer: Buffer, level?: number): Promise<Buffer>;
  * @throws {Error} If decompressed size would exceed maximum allowed size
  * @throws {Error} If compressed data is invalid or size unknown
  */
-export function decompress(buffer: Buffer): Promise<Buffer>;
+export function zstdDecompress(buffer: Buffer): Promise<Buffer>;
 
 /**
  * Set maximum allowed input size

@@ -1,11 +1,11 @@
 {
   "name": "zstd-native",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "gypfile": true,
   "scripts": {
     "preinstall": "npm install node-addon-api",
-    "install": "npx node-gyp rebuild",
+    "install": "npx node-gyp rebuild && node test.js",
     "test": "node test.js"
   },
   "repository": {
